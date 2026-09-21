@@ -12,4 +12,4 @@ PX4 and ROS 2 based autonomous drone navigation simulation using Gazebo and LiDA
 * **Simulator:** Gazebo for 3D physics rendering and multi-sensor integration.
 * **Navigation Control:** MPPI (Model Predictive Path Integral) control for real-time trajectory optimization.
 * **Hardware Requirements for Simulation Runtime:** Ubuntu Linux system equipped with dedicated NVIDIA GPU runtime architectures.
-*
+
