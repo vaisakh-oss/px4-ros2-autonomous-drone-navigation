@@ -1,0 +1,27 @@
+# =================================================================
+# ROS 2 NODE RUNTIME PARAMETERS
+# Configured by: Vaisakh TV (USN: ENG24RA1004)
+# Alteration: Adjusted target flight altitude grid step to 4.0m
+# =================================================================
+
+/drone_nav_node:
+  ros__parameters:
+    # Frame names
+    world_frame: "map"
+    robot_frame: "base_link"
+    
+    # Mission parameters
+    target_x: 15.0
+    target_y: 20.0
+    target_z: 4.0  # Modified from 3.5 to clear taller simulated street obstacles
+    
+    # MPPI Controller constraints
+    num_samples: 500
+    horizon_steps: 30
+    velocity_max: 2.0
+    omega_max: 1.0
+    
+    # Cost weights
+    w_goal: 5.0
+    w_collision: 100.0
+    w_smooth: 0.5
